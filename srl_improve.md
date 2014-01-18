@@ -65,6 +65,7 @@ Label Feature_Name Weight
 ###SRL-Model <line-number>
 ...
 ```
+其中line-number指的是后面跟的行数，也就是该模型的特征维度。
 如果以二进制格式进行模型文件读写的话，line-number可以改为偏移量。
 
 Sample code for merging models:
