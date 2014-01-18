@@ -11,9 +11,7 @@
 
 接口：
 - `iterator`
-
 - `set_head`
-
 - `append_child`
 
 ---
@@ -25,13 +23,9 @@
 
 接口：
 - `post_order_iterator` (`begin_post`, `end_post`)
-
 - `parent`
-
 - `is_valid`
-
 - `node_visited_flags`
-
 - `number_of_children`
 
 ---
