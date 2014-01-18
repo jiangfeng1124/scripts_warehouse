@@ -108,7 +108,7 @@ for l in open(srl_model_path):
 ```
 
 那么，在`SrlModel`（参考Interface Optimization）类中，应定义一个新的模型加载（如：load_merged_model）函数。
-```
+```cpp
 ------pseudo code------
 void load_merged_model(merged_model_path)
 {
@@ -135,7 +135,7 @@ void load_merged_model(merged_model_path)
 
 因此，我们需要修改`Classifier.h`
 
-```
+```cpp
 原：Classifier(const std::string& model)
 新：Classifier(const std::string& model, size_t start, size_t end) // add two arguments
 
@@ -143,7 +143,7 @@ void load_merged_model(merged_model_path)
 新：void load_model(const std::string& model_path, size_t start, size_t end) // add two arguments
 ```
 由于`load_model`里调用的是最大熵模块的模型加载函数`load`，因此，我们还需要修改一下`maxent.h`以及`maxent.cpp`，为了不影响原有的最大熵模块接口，我建议新增一个load函数，如`load_slice`，供`Classifier`类调用。
-```
+```cpp
 ## maxent.h
 class ME_Model
 {
