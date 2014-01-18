@@ -67,7 +67,7 @@ Label Feature_Name Weight
 ```
 如果以二进制格式进行模型文件读写的话，line-number可以改为偏移量。
 
-`Sample code for merging models:`
+Sample code for merging models:
 ```python
 Input: prg_model_path
        pcl_models_dir
