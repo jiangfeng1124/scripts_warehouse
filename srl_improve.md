@@ -46,9 +46,7 @@
 当前模型组织方式：
 
 - `PI` --> `prg_model/prg.model`
-
 - `PC` --> `pcl_models/*` 每一个谓词对应一个单独的模型，谓词列表在`pcl_models/models.list`中
-
 - `AIAC` --> `srl_model/srl.model`
 
 每个模型文件的格式都是统一的，如下：
