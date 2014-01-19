@@ -32,10 +32,10 @@
 
 ## 2. Interface Optimization ##
 ---
-修改目标：将Model与Processing两个功能模块从SrlEngine中分离。
+修改目标：将Model与Processing两个功能模块从`SrlEngine`中分离。
 
 修改建议：
-- 主要修改SrlEngine.h，只需将`m_prg_classifier`以及`m_srl_classifier`提取出来，放在一个新的class中（如SrlModel）。然后在SrlEngine中声明一个SrlModel成员变量即可。
+- 主要修改`SrlEngine.h`，只需将`m_prg_classifier`以及`m_srl_classifier`提取出来，放在一个新的class中（如`SrlModel`）。然后在`SrlEngine`中声明一个`SrlModel`成员变量即可。
 
 ---
 
